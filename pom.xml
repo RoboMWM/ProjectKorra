@@ -70,6 +70,84 @@
             <artifactId>json-simple</artifactId>
             <version>1.1.1</version>
         </dependency>
+		<dependency>
+            <groupId>me.ryanhamshire</groupId>
+            <artifactId>GriefPrevention</artifactId>
+            <version>10.5.3</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/GriefPrevention 10.5.3.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.griefcraft</groupId>
+            <artifactId>lwc</artifactId>
+            <version>4.5.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/LWC.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.massivecraft</groupId>
+            <artifactId>massivecore</artifactId>
+            <version>2.7.5</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/MassiveCore 2.7.5.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>fr.neatmonster</groupId>
+            <artifactId>nocheatplus</artifactId>
+            <version>3.11.0-RC-sMD5NET-b739</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/NoCheatPlus.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.palmergames.bukkit</groupId>
+            <artifactId>towny</artifactId>
+            <version>0.89.2.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Towny.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.bekvon.bukkit</groupId>
+            <artifactId>residence</artifactId>
+            <version>4.0.0.4</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Residence4.0.0.4.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.projectkorra</groupId>
+            <artifactId>spirits</artifactId>
+            <version>1.0.0 PRIVATE PREALPHA</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ProjectKorraSpirits.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.projectkorra</groupId>
+            <artifactId>rpg</artifactId>
+            <version>1.0.2</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ProjectKorraRPG.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.projectkorra</groupId>
+            <artifactId>items</artifactId>
+            <version>1.2.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/ProjectKorrraItems.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>net.sacredlabyrinth.Phaed</groupId>
+            <artifactId>PreciousStones</artifactId>
+            <version>9.7.1-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/PreciousStones 9.7.1.jar</systemPath>
+        </dependency>
+		<dependency>
+            <groupId>com.massivecraft</groupId>
+            <artifactId>factions</artifactId>
+            <version>2.7.5</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/lib/Factions 2.7.5.jar</systemPath>
+        </dependency>
+		
 
     </dependencies>
 
