@@ -228,3 +228,6 @@ test/server/*.json
 test/server/*.yml
 test/server/*.properties
 test/server/plugins/*/
+
+.idea
+*.iml

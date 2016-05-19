@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.projectkorra</groupId>
+    <artifactId>projectkorra</artifactId>
+    <version>don't matter</version>
+    <repositories>
+        <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>worldedit-worldguard-repo</id>
+            <url>http://maven.sk89q.com/repo/</url>
+        </repository>
+
+    </repositories>
+    <build>
+    <!--Maintain existing structure (as much as possible)-->
+        <sourceDirectory>${project.basedir}/src</sourceDirectory>
+<!--        <testSourceDirectory>${project.basedir}/tests/java</testSourceDirectory>
+        <testResources>
+          <testResource>
+            <directory>${project.basedir}/tests/resources</directory>
+          </testResource>
+        </testResources> -->
+        <finalName>${project.name}</finalName>
+        <resources>
+            <resource>
+            <!-- Use plugin.yml in src directory-->
+                <directory>${basedir}/src</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+    <dependencies>
+        <!--Spigot API-->
+        <dependency>
+                 <groupId>org.spigotmc</groupId>
+                 <artifactId>spigot-api</artifactId>
+                 <version>1.9.4-R0.1-SNAPSHOT</version>
+                 <scope>provided</scope>
+        </dependency>
+         <!--Worldguard dependency-->
+        <dependency>
+                <groupId>com.sk89q</groupId>
+                <artifactId>worldguard</artifactId>
+                <version>6.1.1-SNAPSHOT</version>
+        </dependency>
+        <!--WorldGuard depends on WorldEdit-->
+        <dependency>
+                <groupId>com.sk89q.worldedit</groupId>
+                <artifactId>worldedit-bukkit</artifactId>
+                <version>6.1.1-SNAPSHOT</version>
+        </dependency>
+        <!--Google stuff-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
+
