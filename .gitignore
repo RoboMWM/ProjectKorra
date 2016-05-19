@@ -231,3 +231,4 @@ test/server/plugins/*/
 
 .idea
 *.iml
+target/
