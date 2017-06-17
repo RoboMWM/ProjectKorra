@@ -389,7 +389,8 @@ public class PKListener implements Listener {
 	@EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
 	public void onEntityDamageByBlock(EntityDamageByBlockEvent event) {
 		Block block = event.getDamager();
-
+		if (block == null) return;
+		
 		if (TempBlock.isTempBlock(block)) {
 			if (EarthAbility.isEarthbendable(block.getType()) && GeneralMethods.isSolid(block)) {
 				event.setCancelled(true);
@@ -732,11 +733,8 @@ public class PKListener implements Listener {
 		event.setFormat(format);
 	}
 
-	@EventHandler(priority = EventPriority.NORMAL, ignoreCancelled = true)
+	@EventHandler(priority = EventPriority.NORMAL)
 	public void onPlayerDamage(EntityDamageEvent event) {
-		if (event.isCancelled()) {
-			return;
-		}
 
 		if (event.getEntity() instanceof Player) {
 			Player player = (Player) event.getEntity();

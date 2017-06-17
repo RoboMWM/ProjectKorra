@@ -158,7 +158,7 @@ public class FireBlast extends FireAbility {
 
 	@Override
 	public void progress() {
-		if (!bPlayer.canBendIgnoreBindsCooldowns(this)
+		if (!bPlayer.canBendIgnoreCooldowns(this)
 				|| GeneralMethods.isRegionProtectedFromBuild(this, location)) {
 			remove();
 			return;
